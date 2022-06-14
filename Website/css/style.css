@@ -12042,6 +12042,10 @@ nav .navbar-nav .nav-link.active {
   margin-right: 1rem;
 }
 
+.logo {
+  max-width: 110px;
+}
+
 footer {
   background-color: #4baabd;
   padding: 1rem;
