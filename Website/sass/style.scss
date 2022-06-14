@@ -54,5 +54,10 @@
 @import "../bootstrap-scss/utilities/api";
 // scss-docs-end import-stack
 
+//custom styles
 @import "partials/variables";
 @import "partials/base";
+@import "partials/typography";
+@import "partials/nav";
+@import "partials/footer";
+@import "partials/portfolio";

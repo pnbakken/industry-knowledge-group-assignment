@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&family=Quicksand:wght@300;400&display=swap");
+
+$body-fonts: "Libre Franklin", sans-serif;
+$heading-fonts: "Quicksand", sans-serif;
+
+body {
+	font-family: $body-fonts;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $heading-fonts;
+	color: $secondary;
+}
+h2 {
+	@extend .inner-spacer;
+}

@@ -1,0 +1,11 @@
+#portfolio {
+	@extend .mx-auto;
+	text-align: center;
+}
+.projects {
+	@extend .container, .mx-auto;
+
+	figure {
+		margin: 0;
+	}
+}
