@@ -12017,7 +12017,7 @@ footer {
   }
 }
 
-.inner-spacer, h2, .h2 {
+.inner-spacer {
   margin-bottom: 2em;
 }
 
@@ -12037,6 +12037,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h2, .h2 {
   font-size: 3.5em;
   text-align: center;
+  margin-bottom: 1.5em;
 }
 
 header {
