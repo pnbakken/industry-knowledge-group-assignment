@@ -12056,6 +12056,24 @@ footer {
   color: #e6e6e6;
 }
 
+header {
+  background: url("../../assets/images/hero.jpeg") no-repeat center top;
+  background-size: cover;
+  height: 90vh;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    height: 40vh;
+  }
+}
+
 #portfolio {
   text-align: center;
 }
