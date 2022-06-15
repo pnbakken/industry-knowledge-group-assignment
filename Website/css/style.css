@@ -12011,7 +12011,7 @@ footer {
   }
 }
 
-.inner-spacer {
+.inner-spacer, h2, .h2 {
   margin-bottom: 2em;
 }
 
