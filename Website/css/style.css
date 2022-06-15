@@ -6850,13 +6850,13 @@ nav .navbar-text a:focus {
       touch-action: pan-y;
 }
 
-.carousel-inner {
+.carousel-inner, .carousel-item-container {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.carousel-inner::after {
+.carousel-inner::after, .carousel-item-container::after {
   display: block;
   clear: both;
   content: "";
@@ -6934,8 +6934,9 @@ nav .navbar-text a:focus {
   }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev, .carousel-btns-container .prev-btn,
+.carousel-control-next,
+.carousel-btns-container .next-btn {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6961,27 +6962,32 @@ nav .navbar-text a:focus {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .carousel-control-prev,
-  .carousel-control-next {
+  .carousel-control-prev, .carousel-btns-container .prev-btn,
+  .carousel-control-next,
+  .carousel-btns-container .next-btn {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-prev:hover, .carousel-btns-container .prev-btn:hover, .carousel-control-prev:focus, .carousel-btns-container .prev-btn:focus,
 .carousel-control-next:hover,
-.carousel-control-next:focus {
+.carousel-btns-container .next-btn:hover,
+.carousel-control-next:focus,
+.carousel-btns-container .next-btn:focus {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
 }
 
-.carousel-control-prev {
+.carousel-control-prev, .carousel-btns-container .prev-btn {
   left: 0;
 }
 
-.carousel-control-next {
+
+.carousel-control-next,
+.carousel-btns-container .next-btn {
   right: 0;
 }
 
@@ -7675,7 +7681,7 @@ nav .navbar-text a:focus {
   overflow: scroll !important;
 }
 
-.d-inline {
+.d-inline, .carousel-btns-container .prev-btn, .carousel-btns-container .next-btn {
   display: inline !important;
 }
 
@@ -7744,7 +7750,7 @@ nav .navbar-text a:focus {
   position: static !important;
 }
 
-.position-relative {
+.position-relative, .carousel-btns-container .prev-btn, .carousel-btns-container .next-btn {
   position: relative !important;
 }
 
@@ -8397,7 +8403,7 @@ nav .navbar-text a:focus {
   margin-right: 1rem !important;
 }
 
-.me-4 {
+.me-4, .carousel-btns-container .prev-btn {
   margin-right: 1.5rem !important;
 }
 
@@ -12108,5 +12114,54 @@ footer {
 
 .projects figure {
   margin: 0;
+}
+
+.carousel-container {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.carousel-item-container {
+  padding: 0.5em 1.5em;
+}
+
+.carousel-item-container h5, .carousel-item-container .h5 {
+  color: #4baabd;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.avatar {
+  background: url("../../assets/images/testimonies/client-5.jpg") no-repeat center;
+  background-size: cover;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 1em auto;
+  -webkit-filter: drop-shadow(16px 4px 16px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(16px 4px 16px rgba(0, 0, 0, 0.3));
+}
+
+.avatarImages {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 1em auto;
+  -webkit-filter: drop-shadow(16px 4px 16px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(16px 4px 16px rgba(0, 0, 0, 0.3));
+}
+
+.carousel-btns-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.carousel-btns-container i {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #4baabd;
 }
 /*# sourceMappingURL=style.css.map */

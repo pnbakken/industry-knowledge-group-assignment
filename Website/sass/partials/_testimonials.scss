@@ -1,3 +1,53 @@
 #testimonials {
 	@extend .spacer;
 }
+
+.carousel-container {
+	text-align: center;
+	align-self: center;
+}
+
+.carousel-item-container {
+	@extend .carousel-inner;
+	padding: 0.5em 1.5em;
+
+	h5 {
+		color: $primary;
+		font-weight: bold;
+		margin-bottom: 0.2em;
+	}
+}
+.avatar {
+	background: url("../../assets/images/testimonies/client-5.jpg") no-repeat center;
+	background-size: cover;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	margin: 1em auto;
+	filter: drop-shadow(16px 4px 16px rgba(0, 0, 0, 0.3));
+}
+.avatarImages {
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	margin: 1em auto;
+	filter: drop-shadow(16px 4px 16px rgba(0, 0, 0, 0.3));
+}
+.carousel-btns-container {
+	text-align: center;
+	width: 100%;
+	margin-top: 1.5em;
+
+	.prev-btn {
+		@extend .carousel-control-prev, .position-relative, .d-inline, .me-4;
+	}
+
+	.next-btn {
+		@extend .carousel-control-next, .position-relative, .d-inline;
+	}
+	i {
+		font-weight: bold;
+		font-size: 1.5em;
+		color: $primary;
+	}
+}
