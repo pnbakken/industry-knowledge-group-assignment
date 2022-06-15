@@ -683,7 +683,7 @@ footer {
   }
 }
 
-.row {
+.row, .services-row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: -webkit-box;
@@ -696,7 +696,7 @@ footer {
   margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 
-.row > * {
+.row > *, .services-row > * {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 100%;
@@ -719,7 +719,7 @@ footer {
   width: auto;
 }
 
-.row-cols-1 > * {
+.row-cols-1 > *, .services-row > * {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -936,12 +936,12 @@ footer {
   --bs-gutter-y: 1rem;
 }
 
-.g-4,
+.g-4, .services-row,
 .gx-4 {
   --bs-gutter-x: 1.5rem;
 }
 
-.g-4,
+.g-4, .services-row,
 .gy-4 {
   --bs-gutter-y: 1.5rem;
 }
@@ -1370,11 +1370,11 @@ footer {
   .gy-md-4 {
     --bs-gutter-y: 1.5rem;
   }
-  .g-md-5,
+  .g-md-5, .services-row,
   .gx-md-5 {
     --bs-gutter-x: 3rem;
   }
-  .g-md-5,
+  .g-md-5, .services-row,
   .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
@@ -1398,7 +1398,7 @@ footer {
             flex: 0 0 auto;
     width: 100%;
   }
-  .row-cols-lg-2 > * {
+  .row-cols-lg-2 > *, .services-row > * {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -5155,7 +5155,7 @@ nav .navbar-text a:focus {
   border-top: 0;
 }
 
-.card-body {
+.card-body, .services-row .card {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -7663,7 +7663,7 @@ nav .navbar-text a:focus {
   overflow: auto !important;
 }
 
-.overflow-hidden {
+.overflow-hidden, #services {
   overflow: hidden !important;
 }
 
@@ -7704,7 +7704,7 @@ nav .navbar-text a:focus {
   display: table-cell !important;
 }
 
-.d-flex, footer, .social-icons {
+.d-flex, footer, .social-icons, .icons {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -7720,7 +7720,7 @@ nav .navbar-text a:focus {
   display: none !important;
 }
 
-.shadow {
+.shadow, .services-row .card {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(31, 31, 31, 0.15) !important;
           box-shadow: 0 0.5rem 1rem rgba(31, 31, 31, 0.15) !important;
 }
@@ -7828,7 +7828,7 @@ nav .navbar-text a:focus {
   border: 1px solid #dee2e6 !important;
 }
 
-.border-0 {
+.border-0, .services-row .card {
   border: 0 !important;
 }
 
@@ -8091,7 +8091,7 @@ nav .navbar-text a:focus {
           justify-content: flex-end !important;
 }
 
-.justify-content-center, footer {
+.justify-content-center, footer, .icons {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
@@ -8126,7 +8126,7 @@ nav .navbar-text a:focus {
           align-items: flex-end !important;
 }
 
-.align-items-center, footer {
+.align-items-center, footer, .icons {
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -8313,7 +8313,7 @@ nav .navbar-text a:focus {
   margin-left: 3rem !important;
 }
 
-.mx-auto, #portfolio, .projects {
+.mx-auto, #services, #portfolio, .projects {
   margin-right: auto !important;
   margin-left: auto !important;
 }
@@ -8425,7 +8425,7 @@ nav .navbar-text a:focus {
   margin-bottom: 1rem !important;
 }
 
-.mb-4 {
+.mb-4, .icons {
   margin-bottom: 1.5rem !important;
 }
 
@@ -8972,7 +8972,7 @@ nav .navbar-text a:focus {
   pointer-events: auto !important;
 }
 
-.rounded {
+.rounded, .icons {
   border-radius: 0.25rem !important;
 }
 
@@ -8988,7 +8988,7 @@ nav .navbar-text a:focus {
   border-radius: 0.25rem !important;
 }
 
-.rounded-3 {
+.rounded-3, .services-row .card {
   border-radius: 0.3rem !important;
 }
 
@@ -12001,12 +12001,12 @@ footer {
       flex-shrink: 0;
 }
 
-.spacer {
+.spacer, #services, #portfolio {
   margin-bottom: 200px;
 }
 
 @media (max-width: 576px) {
-  .spacer {
+  .spacer, #services, #portfolio {
     margin-bottom: 100px;
   }
 }
@@ -12026,6 +12026,29 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Quicksand", sans-serif;
   color: #4f5f73;
+}
+
+h2, .h2 {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+header {
+  background: url("../../assets/images/hero.jpeg") no-repeat center top;
+  background-size: cover;
+  height: 90vh;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    height: 40vh;
+  }
 }
 
 nav {
@@ -12056,22 +12079,27 @@ footer {
   color: #e6e6e6;
 }
 
-header {
-  background: url("../../assets/images/hero.jpeg") no-repeat center top;
-  background-size: cover;
-  height: 90vh;
+#services {
+  padding: 3em 0.5em;
+  background-color: #e6e6e6;
 }
 
-@media (max-width: 768px) {
-  header {
-    height: 60vh;
-  }
+.services-row .card {
+  padding: 2em;
 }
 
 @media (max-width: 576px) {
-  header {
-    height: 40vh;
+  .services-row .card {
+    padding: 1em;
   }
+}
+
+.icons {
+  width: 80px;
+  height: 80px;
+  font-size: 2em;
+  color: #ffffff;
+  background-color: #4baabd;
 }
 
 #portfolio {

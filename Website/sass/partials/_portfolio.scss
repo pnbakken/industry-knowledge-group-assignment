@@ -1,5 +1,5 @@
 #portfolio {
-	@extend .mx-auto;
+	@extend .spacer, .mx-auto;
 	text-align: center;
 }
 .projects {
