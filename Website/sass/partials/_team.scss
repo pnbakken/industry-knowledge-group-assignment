@@ -1,0 +1,9 @@
+#team {
+	@extend .spacer, .mx-auto;
+}
+.team-container {
+	@extend .row;
+}
+.social-links {
+	@extend .d-flex, .justify-content-center, .gap-3;
+}
