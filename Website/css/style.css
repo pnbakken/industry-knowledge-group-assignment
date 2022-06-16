@@ -7736,7 +7736,7 @@ nav .navbar-text a:focus {
           box-shadow: 0 0.125rem 0.25rem rgba(31, 31, 31, 0.075) !important;
 }
 
-.shadow-lg {
+.shadow-lg, .carousel-wrapper {
   -webkit-box-shadow: 0 1rem 3rem rgba(31, 31, 31, 0.175) !important;
           box-shadow: 0 1rem 3rem rgba(31, 31, 31, 0.175) !important;
 }
@@ -8097,7 +8097,7 @@ nav .navbar-text a:focus {
           justify-content: flex-end !important;
 }
 
-.justify-content-center, footer, .services-row .icons, .social-links {
+.justify-content-center, footer, .services-row .icons, .social-links, .carousel-wrapper {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
@@ -8132,7 +8132,7 @@ nav .navbar-text a:focus {
           align-items: flex-end !important;
 }
 
-.align-items-center, footer, .services-row .icons {
+.align-items-center, footer, .services-row .icons, .carousel-wrapper {
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -8319,7 +8319,7 @@ nav .navbar-text a:focus {
   margin-left: 3rem !important;
 }
 
-.mx-auto, #services, #portfolio, .projects, #team {
+.mx-auto, #services, #portfolio, .projects, #team, .carousel-wrapper {
   margin-right: auto !important;
   margin-left: auto !important;
 }
@@ -12115,6 +12115,12 @@ footer {
 
 .projects figure {
   margin: 0;
+}
+
+.carousel-wrapper {
+  background-color: #e6e6e6;
+  max-width: 800px;
+  padding: 2em;
 }
 
 .carousel-container {

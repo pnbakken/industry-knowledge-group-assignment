@@ -2,6 +2,13 @@
 	@extend .spacer;
 }
 
+.carousel-wrapper {
+	@extend .justify-content-center, .align-items-center, .mx-auto, .shadow-lg;
+	background-color: $light;
+	max-width: 800px;
+	padding: 2em;
+}
+
 .carousel-container {
 	text-align: center;
 	align-self: center;
