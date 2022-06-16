@@ -1,26 +1,26 @@
 const projectsData = [
     {
-        img: "/assets/images/project-1.jpg",
+        img: "/assets/images/projects/project-1.jpg",
         alt: ""
     },
     {
-        img: "/assets/images/project-2.jpg",
+        img: "/assets/images/projects/project-2.jpg",
         alt: ""
     },
     {
-        img: "/assets/images/project-3.jpg",
+        img: "/assets/images/projects/project-3.jpg",
         alt: ""
     },
     {
-        img: "/assets/images/project-4.jpg",
+        img: "/assets/images/projects/project-4.jpg",
         alt: ""
     },
     {
-        img: "/assets/images/project-5.jpg",
+        img: "/assets/images/projects/project-5.jpg",
         alt: ""
     },
     {
-        img: "/assets/images/project-6.jpg",
+        img: "/assets/images/projects/project-6.jpg",
         alt: ""
     },
 ]
