@@ -2,7 +2,7 @@ const teamData = [
     {
         name: "Ankit Soni",
         jobTitle: "Front-end developer",
-        img: "/assets/images/project-1.jpg",
+        img: "/assets/images/team/ankit.jpg",
         alt: "Ankit Soni",
 
     },
