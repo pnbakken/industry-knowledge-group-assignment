@@ -1252,7 +1252,7 @@ footer {
             flex: 0 0 auto;
     width: 41.66667%;
   }
-  .col-md-6 {
+  .col-md-6, .team-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1446,7 +1446,7 @@ footer {
             flex: 0 0 auto;
     width: 16.66667%;
   }
-  .col-lg-3 {
+  .col-lg-3, .team-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -7392,7 +7392,7 @@ nav .navbar-text a:focus {
   margin-left: 3rem !important;
 }
 
-.mx-auto, #services, #portfolio, .projects, #team, .carousel-wrapper {
+.mx-auto, #services, #portfolio, .projects, #team, .team-item, .carousel-wrapper {
   margin-right: auto !important;
   margin-left: auto !important;
 }
@@ -7407,7 +7407,7 @@ nav .navbar-text a:focus {
   margin-bottom: 0.25rem !important;
 }
 
-.my-2 {
+.my-2, .team-item {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
 }
@@ -11197,6 +11197,10 @@ footer {
 }
 
 .projects figure {
+  margin: 0;
+}
+
+.team-container figure {
   margin: 0;
 }
 

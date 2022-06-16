@@ -31,13 +31,13 @@ export function renderTeam() {
 
     teamData.forEach(data => {
 
-        teamContainer.innerHTML += `<div class="col-md-6 col-lg-3 my-2 mx-auto">
+        teamContainer.innerHTML += `<div class="team-item">
                                             <figure>
                                                 <img src= ${data.img} alt=${data.alt} >
                                             </figure>
-                                            <div class="position-relative text-center py-4 bg-white shadow" >
-                                                <h4 editable="inline">${data.name}</h4>
-                                                <p editable="inline" class="small">${data.jobTitle}</p>
+                                            <div class=" text-center py-4 bg-white shadow" >
+                                                <h4 >${data.name}</h4>
+                                                <p  class="small">${data.jobTitle}</p>
                                                 <div class="social-links">
                                                     <a href="#"> <i class="fa-brands fa-facebook-f"></i>
                                                     <a href="#"><i class="fa-brands fa-github"></i> </a>
