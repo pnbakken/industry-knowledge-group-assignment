@@ -9,7 +9,7 @@ const teamData = [
     {
         name: "Pål Nicholas Bakken",
         jobTitle: "Front-end developer",
-        img: "/assets/images/project-2.jpg",
+        img: "/assets/images/projects/project-2.jpg",
         alt: "Pål Nicholas Bakken",
     },
     {
@@ -21,7 +21,7 @@ const teamData = [
     {
         name: "Aleksander Rezai",
         jobTitle: "Front-end developer",
-        img: "/assets/images/project-4.jpg",
+        img: "/assets/images/projects/project-4.jpg",
         alt: "Aleksander Rezai",
     },
 ]
