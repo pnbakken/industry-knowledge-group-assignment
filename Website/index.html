@@ -148,26 +148,33 @@
 			<section id="contact">
 				<h2>Get in touch with us</h2>
 				<form id="contact-form">
-					<div class="input-group">
+					<div class="input-group name">
 						<label for="name">Your name</label>
 						<input type="text" id="name" name="name" />
+						<div class="error"></div>
 					</div>
-					<div class="input-group">
+					<div class="input-group email">
 						<label for="email">Your email</label>
 						<input type="email" id="email" name="email" />
+						<div class="error"></div>
 					</div>
-					<div class="input-group">
+					<div class="input-group phone">
 						<label for="phone">Your telephone number (optional)</label>
 						<input type="text" id="phone" name="phone" />
+						<div class="error"></div>
 						<!--Validate number characters with Regex-->
 					</div>
-					<div class="input-group">
+					<div class="input-group text">
 						<label for="message-text">Your message</label>
 						<textarea id="message-text" name="email"></textarea>
+						<div class="error"></div>
 					</div>
+					<div class="successDiv display-none"><p>Submitted</p></div>
 					<button type="submit" id="submit" value="submit">Send</button>
 				</form>
 			</section>
+		</main>
+
 		</main>
 
 		<!-- site footer -->

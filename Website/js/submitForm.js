@@ -5,6 +5,8 @@ const phone = document.querySelector("#phone");
 const message = document.querySelector("#message-text");
 const inputGroups = document.querySelectorAll(".input-group");
 const successDiv = document.querySelector(".successDiv");
+
+
 export const submitForm = () => {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -12,6 +14,8 @@ export const submitForm = () => {
         const phoneValue = phone.value.trim();
         const messageValue = message.value.trim();
         const emailValue = email.value.trim();
+
+
         if (nameValue === "" || nameValue == null) {
             displayError(
                 firstName,
