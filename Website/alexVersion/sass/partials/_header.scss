@@ -1,0 +1,13 @@
+header {
+	background: url("../../assets/images/hero.jpeg") no-repeat center top;
+	background-size: cover;
+	height: 90vh;
+
+	@media (max-width: $tablet) {
+		height: 60vh;
+	}
+
+	@media (max-width: $mobile) {
+		height: 60vh;
+	}
+}

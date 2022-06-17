@@ -1,0 +1,15 @@
+nav {
+	@extend .navbar, .navbar-light, .navbar-expand-lg;
+	font-size: 1.1rem;
+	border-bottom: 1px solid $primary;
+	padding: 1em;
+}
+nav .navbar-nav .nav-link.active {
+	color: $primary;
+}
+.nav-link {
+	margin-right: 1rem;
+}
+.logo {
+	max-width: 110px;
+}
