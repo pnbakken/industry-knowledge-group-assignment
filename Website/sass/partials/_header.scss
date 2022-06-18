@@ -2,12 +2,25 @@ header {
 	background: url("../../assets/images/hero.jpeg") no-repeat center top;
 	background-size: cover;
 	height: 90vh;
+	position: relative;
+}
 
-	@media (max-width: $tablet) {
-		height: 60vh;
+.hero {
+	@extend .shadow-lg, .rounded-3;
+
+	max-width: 500px;
+	background: $secondary;
+	padding: 2em;
+	z-index: 100;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+
+	h1 {
+		margin-bottom: 1em;
+		color: $light;
 	}
-
-	@media (max-width: $mobile) {
-		height: 60vh;
+	p {
+		font-family: $heading-fonts;
 	}
 }

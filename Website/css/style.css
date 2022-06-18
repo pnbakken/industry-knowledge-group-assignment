@@ -6809,7 +6809,7 @@ nav .navbar-text a:focus {
           box-shadow: 0 0.125rem 0.25rem rgba(31, 31, 31, 0.075) !important;
 }
 
-.shadow-lg, .carousel-wrapper {
+.shadow-lg, .hero, .carousel-wrapper {
   -webkit-box-shadow: 0 1rem 3rem rgba(31, 31, 31, 0.175) !important;
           box-shadow: 0 1rem 3rem rgba(31, 31, 31, 0.175) !important;
 }
@@ -8067,7 +8067,7 @@ nav .navbar-text a:focus {
   border-radius: 0.25rem !important;
 }
 
-.rounded-3, .services-row .card {
+.rounded-3, .hero, .services-row .card {
   border-radius: 0.3rem !important;
 }
 
@@ -11118,18 +11118,26 @@ header {
   background: url("../../assets/images/hero.jpeg") no-repeat center top;
   background-size: cover;
   height: 90vh;
+  position: relative;
 }
 
-@media (max-width: 768px) {
-  header {
-    height: 60vh;
-  }
+.hero {
+  max-width: 500px;
+  background: #4f5f73;
+  padding: 2em;
+  z-index: 100;
+  position: absolute;
+  top: 20%;
+  left: 10%;
 }
 
-@media (max-width: 576px) {
-  header {
-    height: 60vh;
-  }
+.hero h1, .hero .h1 {
+  margin-bottom: 1em;
+  color: #e6e6e6;
+}
+
+.hero p {
+  font-family: "Quicksand", sans-serif;
 }
 
 nav {
