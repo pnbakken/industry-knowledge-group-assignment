@@ -11080,12 +11080,12 @@ footer {
       flex-shrink: 0;
 }
 
-.spacer, #services, #portfolio, #team, #testimonials, #contact {
+.spacer, header, #main-cta, #services, #portfolio, #team, #testimonials, #contact {
   margin-bottom: 200px;
 }
 
 @media (max-width: 576px) {
-  .spacer, #services, #portfolio, #team, #testimonials, #contact {
+  .spacer, header, #main-cta, #services, #portfolio, #team, #testimonials, #contact {
     margin-bottom: 100px;
   }
 }
@@ -11179,7 +11179,7 @@ footer {
 }
 
 #services {
-  padding: 3em 0.5em;
+  padding: 4em 0.5em;
   background-color: #e6e6e6;
 }
 

@@ -1,6 +1,6 @@
 #services {
 	@extend .spacer, .overflow-hidden, .mx-auto;
-	padding: 3em 0.5em;
+	padding: 4em 0.5em;
 	background-color: $light;
 }
 
@@ -15,14 +15,12 @@
 			padding: 1em;
 		}
 	}
-    .icons {
-        @extend .d-flex, .justify-content-center, .align-items-center, .mb-4, .rounded;
-        width: 80px;
-        height: 80px;
-        font-size: 2em;
-        color: $white;
-        background-color: $primary;
-    }
-    
+	.icons {
+		@extend .d-flex, .justify-content-center, .align-items-center, .mb-4, .rounded;
+		width: 80px;
+		height: 80px;
+		font-size: 2em;
+		color: $white;
+		background-color: $primary;
+	}
 }
-

@@ -1,4 +1,5 @@
 header {
+	@extend .spacer;
 	background: url("../../assets/images/hero.jpeg") no-repeat center top;
 	background-size: cover;
 	height: 90vh;
