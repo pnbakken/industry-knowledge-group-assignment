@@ -30,7 +30,7 @@ export function renderServices() {
 
     const servicesRow = document.querySelector(".services-row");
 
-    let tracker = 0;
+    let tracker = 1;
 
     servicesData.forEach(data => {
         let direction = (tracker % 2 === 0) ? "up" : "right"; 
@@ -42,7 +42,8 @@ export function renderServices() {
                                                 <p class="lead">${data.description}</p>
                                             </div>
                                         </div>
-                                    </div>`
+                                    </div>`;
+        tracker++;
     })
 
 }
