@@ -33,8 +33,8 @@ export function renderPortfolio() {
 
         let direction = (tracker % 2 === 0) ? "up" : "right"; 
 
-        projectsContainer.innerHTML += `<figure class="col-md-4" data-aos="flip-${direction}" data-aos-duration="800">
-                                            <img src=${data.img} alt=${data.alt} />
+        projectsContainer.innerHTML += `<figure class="col-md-4" data-aos="fade-${direction}" data-aos-duration="800">
+                                            <img src=${data.img} alt=${data.alt}/>
                                         </figure>`;
 
         tracker++;
