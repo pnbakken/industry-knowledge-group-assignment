@@ -10,7 +10,7 @@ const teamData = [
     {
         name: "Pål Nicholas Bakken",
         jobTitle: "Front-end developer",
-        img: "/assets/images/projects/project-2.jpg",
+        img: "/assets/images/projects/IMG_8869.jpg",
         alt: "Pål Nicholas Bakken",
         url: "https://snazzy-biscuit-4ece2a.netlify.app/",
     },
