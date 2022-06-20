@@ -28,11 +28,16 @@ const projectsData = [
 export function renderPortfolio() {
     const projectsContainer = document.querySelector(".projects");
 
+    let tracker = 0;
     projectsData.forEach(data => {
 
-        projectsContainer.innerHTML += `<figure class="col-md-4">
-                                            <img src=${data.img} alt=${data.alt} />
-                                        </figure>`
+        let direction = (tracker % 2 === 0) ? "up" : "right"; 
+
+        projectsContainer.innerHTML += `<figure class="col-md-4" data-aos="fade-${direction}" data-aos-duration="800">
+                                            <img src=${data.img} alt=${data.alt}/>
+                                        </figure>`;
+
+        tracker++;
     })
 
 }

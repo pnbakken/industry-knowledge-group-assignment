@@ -30,17 +30,20 @@ export function renderServices() {
 
     const servicesRow = document.querySelector(".services-row");
 
-    servicesData.forEach(data => {
+    let tracker = 1;
 
+    servicesData.forEach(data => {
+        let direction = (tracker % 2 === 0) ? "up" : "right"; 
         servicesRow.innerHTML += `<div class="col px-lg-6">
-                                        <div class="card">
+                                        <div class="card"  data-aos="flip-${direction}" data-aos-duration="600">
                                             <div class="icons">${data.icon}</div>
                                             <div>
                                                 <h3 class="text-primary">${data.title}</h3>
                                                 <p class="lead">${data.description}</p>
                                             </div>
                                         </div>
-                                    </div>`
+                                    </div>`;
+        tracker++;
     })
 
 }
